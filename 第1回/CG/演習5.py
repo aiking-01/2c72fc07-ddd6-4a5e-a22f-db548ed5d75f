@@ -1,0 +1,1 @@
+for j in['uary','ber']:print(len([i for i in month if j in i]))

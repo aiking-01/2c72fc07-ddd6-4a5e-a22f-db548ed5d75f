@@ -10,7 +10,4 @@ def add_tax(amount, rate):       # 税抜き金額 と 税率 から 税込み�
 a,b,c=bento, sandwich, drink = 500, 300, 100
 d,e,f=bento_num, sandwich_num, drink_num = 1, 2, 1
 ##### ここにプログラムを作成して、「金額の表示」につなげること
-# 金額の表示
-print("合計金額：", (t:=(g:=subtotal)(a,d)+g(b,e)+g(c,f)), "円")
-print("消費税：", tax(t,0.08), "円")
-print("支払金額：", add_tax(t,0.08), "円")
+print("合計金額：",t:=(g:=subtotal)(a,d)+g(b,e)+g(c,f),"円\n消費税：",tax(t,0.08),"円\n支払金額：",add_tax(t,0.08),"円")

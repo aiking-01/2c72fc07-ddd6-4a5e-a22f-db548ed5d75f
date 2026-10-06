@@ -5,6 +5,6 @@ class Person:
         self.age = num
 
     def print_person(self):
-        print("First Name: ", self.lastname)
-        print("Last Name: ", self.firstname)
+        print("Last Name: ", self.lastname)
+        print("First Name: ", self.firstname)
         print("Age: ", self.age)

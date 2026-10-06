@@ -1,0 +1,1 @@
+Person('姓','名',18).print_person()

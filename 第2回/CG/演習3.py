@@ -1,0 +1,1 @@
+print("tama:\nWeight:"," Age:".join(tama.getdata()),"\nHuman Age: ",tama.human_age())

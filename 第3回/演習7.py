@@ -13,6 +13,7 @@ class Planet:
     print("　太陽距離（億km）：",self.distance)
     print("　直径（km）：",self.diameter)
     print("　質量（地球比）：",self.massratio)
+    print("　面積（km2）：",self.surface())
 
 # 動作の確認
 

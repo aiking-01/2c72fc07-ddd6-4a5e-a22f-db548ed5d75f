@@ -1,0 +1,5 @@
+f = open("readme.txt","r")
+code = f.read()
+deco = decode(code)
+print(deco)
+f.close()

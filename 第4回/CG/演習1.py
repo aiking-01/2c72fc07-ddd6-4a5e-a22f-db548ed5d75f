@@ -1,0 +1,1 @@
+with open("readme.txt","r")as f:print(decode(f.read()))

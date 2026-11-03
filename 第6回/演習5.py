@@ -1,21 +1,3 @@
-import csv
-import requests
-
-def get_lonlat(address):
-    # 国土地理院の住所検索API
-    url = f"https://msearch.gsi.go.jp/address-search/AddressSearch?q={address}"
-
-    response = requests.get(url)
-    data = response.json()
-
-    if data:
-        # 返却される座標は [経度, 緯度] の順
-        lon, lat = data[0]["geometry"]["coordinates"]
-    else:
-        lon, lat = -1, -1
-
-    return (lon, lat)
-
 fname = "schools.csv"        # 入力ファイル
 fname_w = "univ.csv"         # 作成するファイル
 

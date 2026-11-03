@@ -1,0 +1,1 @@
+with open('data.csv')as f:print((a:=list(csv.reader(f)))[3],*a[6:],sep="\n")

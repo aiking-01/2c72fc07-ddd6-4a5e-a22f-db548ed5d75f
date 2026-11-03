@@ -1,1 +1,1 @@
-with open('data.csv')as f:print((a:=list(csv.reader(f)))[3],*a[6:],sep="\n")
+with open('data.csv',encoding='cp932',newline="")as f:print((a:=list(csv.reader(f)))[3],*map(lambda x:[x[0],x[1],x[4],x[7],x[11],x[14],x[17]],a[6:]),sep="\n")

@@ -1,0 +1,1 @@
+with open('data.csv',encoding='CP932') as f,open('smalldata.csv','w',encoding='utf-8',newline="")as fw:csv.writer(fw).writerows(map(lambda x:[x[0],x[1],x[4]],[(r:=list(csv.reader(f)))[3]]+r[6:]))

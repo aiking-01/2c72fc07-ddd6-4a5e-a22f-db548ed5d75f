@@ -1,0 +1,1 @@
+with open('data.csv',encoding='CP932',newline='')as f:print(max(map(lambda x:float(x[1]),list(csv.reader(f))[6:])))
